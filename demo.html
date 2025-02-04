@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Course Cards</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .course-card {
+            position: relative;
+            color: white;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+
+        .course-card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .course-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .course-content {
+            position: absolute;
+            bottom: 15px;
+            left: 15px;
+            right: 15px;
+            z-index: 10;
+        }
+
+        .popular-label {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: rgba(255, 255, 255, 0.8);
+            color: black;
+            padding: 5px 10px;
+            font-size: 0.8rem;
+            border-radius: 12px;
+            font-weight: bold;
+        }
+
+        .btn-custom {
+            background: white;
+            color: black;
+            font-weight: bold;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 20px;
+        }
+
+        .btn-custom:hover {
+            background: #f8f9fa;
+        }
+
+        .course-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .course-description {
+            font-size: 0.9rem;
+            opacity: 0.85;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container py-5">
+        <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-md-4">
+                <div class="course-card bg-dark text-white">
+                    <img src="assets/img/Cacoon/e0e654f811.svg" alt="Mindful Beginnings">
+                    <div class="popular-label">Popular Course</div>
+                    <div class="course-content">
+                        <h5 class="course-title">Mindful Beginnings</h5>
+                        <p class="course-description">
+                            Learn the basics of mindfulness and start your journey toward inner peace.
+                        </p>
+                        <button class="btn btn-custom mt-2">Start Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-4">
+                <div class="course-card bg-dark text-white">
+                    <img src="assets/img/Cacoon/Mask group.svg" alt="Art of Letting Go">
+                    <div class="popular-label">Popular Course</div>
+                    <div class="course-content">
+                        <h5 class="course-title">The Art of Letting Go</h5>
+                        <p class="course-description">
+                            Release negativity and create space for positivity and growth.
+                        </p>
+                        <button class="btn btn-custom mt-2">Start Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-4">
+                <div class="course-card bg-dark text-white">
+                    <img src="assets/img/Cacoon/e0e654f811.svg" alt="Mindful Beginnings">
+                    <div class="popular-label">Popular Course</div>
+                    <div class="course-content">
+                        <h5 class="course-title">Mindful Beginnings</h5>
+                        <p class="course-description">
+                            Learn the basics of mindfulness and start your journey toward inner peace.
+                        </p>
+                        <button class="btn btn-custom mt-2">Start Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
