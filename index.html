@@ -30,11 +30,225 @@
   <link href="assets/css/main.css" rel="stylesheet">
 
   <style>
-    @media (min-width: 768px) and (max-width: 1199px) {
-      #textlg {
+    /* Extra small devices (phones, 320px and up) */
+    @media only screen and (min-width: 375px) and (max-width: 667px) {
+
+      /* Your styles for small phones */
+
+      #Inner-Peace {
+        font-size: 2.5em;
+        line-height: 40px;
+      }
+
+      .medi-img-flex {
+        display: flex;
+        justify-content: center;
+      }
+
+
+
+      #medi-img {
+        width: 80%;
+      }
+
+
+
+
+
+      #text-lg {
+        text-align: center;
+        color: white;
         padding: 0px 10px;
+        font-size: 1em"
+
+      }
+
+      .power-of-medi {
+        color: whitesmoke;
+        font-size: 1.5em
+      }
+
+      .we-provide {
+        color: whitesmoke;
+        content: white;
+        text-align: center;
+      }
+
+      .lern-more-btn {
+        justify-content: center;
+      }
+
+      .hero-section h1 {
+        font-size: 2rem;
+        font-weight: bold;
+      }
+
+      .wisdom {
+        color: #6200ea;
+        /* margin: 0px 400px; */
       }
     }
+
+
+    /* Small devices (larger phones, 481px and up) */
+    @media only screen and (min-width: 414px) and (max-width: 768px) {
+      .wisdom {
+        color: #6200ea;
+        /* margin: 0px 400px; */
+      }
+
+      /* .item-card {
+        margin: 5px 12px;
+      } */
+
+      .card-course {
+        margin: 30px 0px;
+      }
+
+      .hero-section h1 {
+        font-size: 2rem;
+        font-weight: bold;
+      }
+
+      /* Your styles for larger phones */
+      #Inner-Peace {
+        font-size: 3em;
+        line-height: 40px;
+      }
+
+      #text-lg {
+        text-align: center;
+        color: white;
+        padding: 0px 5px;
+        font-size: 1em"
+
+      }
+
+      .power-of-medi {
+        color: whitesmoke;
+        font-size: 1.5em;
+        /* line-height: 45px; */
+
+      }
+
+      .lern-more-btn {
+        justify-content: center;
+      }
+
+
+    }
+
+    @media only screen and (min-width: 481px) and (max-width: 767px) {
+      .lern-more-btn {
+        justify-content: center;
+      }
+
+      .item-card {
+        margin: 5px 12px;
+      }
+
+
+      /* Your styles for larger phones */
+      #Inner-Peace {
+        font-size: 3em;
+        line-height: 46px;
+      }
+
+      .lern-more-btn {
+        justify-content: center;
+      }
+
+      #text-lg {
+        text-align: center;
+        color: white;
+        padding: 0px 50px;
+        font-size: 1em"
+
+      }
+
+      .power-of-medi {
+        color: whitesmoke;
+        font-size: 1.5em
+      }
+
+    }
+
+    /* Medium devices (tablets, 768px and up) */
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+      /* Your styles for tablets */
+      .item-card {
+        padding: 10px 10px;
+      }
+
+      .lern-more-btn {
+        justify-content: center;
+      }
+
+      .we-provide {
+        color: whitesmoke;
+        content: white;
+        text-align: center;
+      }
+    }
+
+    /* Large devices (desktops, 1025px and up) */
+    @media only screen and (min-width: 1025px) {
+      /* .item-card {
+        margin: 5px 5px;
+      } */
+
+      /* Your styles for desktops */
+      .btn-lern {
+        margin-left: 100px;
+
+      }
+
+      #text-lg {
+        text-align: center;
+        color: white;
+        padding: 0px 50px;
+        font-size: 1em"
+
+      }
+
+      .power-of-medi {
+        color: whitesmoke;
+        font-size: 3em;
+        font-weight: lighter;
+      }
+
+      #Inner-Peace {
+        font-size: 5em;
+        line-height: 72px;
+      }
+
+
+
+      .what {
+        color: whitesmoke;
+        font-size: 3em;
+      }
+
+      .we-provide {
+        color: aliceblue;
+        padding: 0px 92px;
+      }
+
+      .wisdom {
+        color: #6200ea;
+        margin: 0px 400px;
+
+      }
+
+      .hero-section h1 {
+        font-size: 3rem;
+        font-weight: bold;
+      }
+
+
+    }
+
 
 
 
@@ -46,10 +260,6 @@
       background-color: #121212;
     }
 
-    .hero-section h1 {
-      font-size: 3rem;
-      font-weight: bold;
-    }
 
     .hero-section p {
       margin-top: 10px;
@@ -308,13 +518,13 @@
       <div class="container">
         <div class="row gy-4">
           <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center " data-aos="zoom-out">
-            <h1 style="font-size: 5em; line-height: 72px;">Find Your
+            <h1 id="Inner-Peace">Find Your
               Inner Peace
               with Cacoon</h1>
             <p>Explore audio courses in Meditation, Podcasts,
               Indian Mythology, and Spiritual Music to relax
               and grow</p>
-            <div class="d-flex">
+            <div class=" d-flex">
               <a href="#about" class="btn-get-started mr-5" style="background-color: whitesmoke;color: black;">Lean More
               </a>
               <a class="btn-get-started ml-lg-4" style="margin-left: 20px; background-color: whitesmoke;color:black;"
@@ -324,8 +534,8 @@
                   Video</span></a> -->
             </div>
           </div>
-          <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="200">
-            <img src="assets/img/Cacoon/Meditation-01.svg" class="img-fluid animated" alt="">
+          <div class="col-lg-6 order-1 order-lg-2 hero-img medi-img-flex" data-aos="zoom-out" data-aos-delay="200">
+            <img src="assets/img/Cacoon/Meditation-01.svg" class="img-fluid animated" id="medi-img" alt="">
           </div>
 
         </div>
@@ -397,14 +607,14 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2 style="color: whitesmoke;font-size: 3em;">KEY FEATURES</h2>
+        <h2 style="color: whitesmoke;">KEY FEATURES</h2>
       </div><!-- End Section Title -->
 
       <div class="container">
 
         <div class="row d-flex justify-content-center">
 
-          <div class="col-lg-3 content" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-3 col-md-4 content" data-aos="fade-up" data-aos-delay="100">
             <div class="d-flex justify-content-center">
               <img src="assets/img/Cacoon/HeadPhones-02.svg">
             </div>
@@ -414,7 +624,7 @@
 
           </div>
 
-          <div class="col-lg-3 content" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-3 col-md-4 content" data-aos="fade-up" data-aos-delay="100">
             <div class="d-flex justify-content-center">
               <img src="assets/img/Cacoon/Search-03.svg">
             </div>
@@ -423,7 +633,7 @@
             </p>
 
           </div>
-          <div class="col-lg-3 content" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-3 col-md-4 content" data-aos="fade-up" data-aos-delay="100">
             <div class="d-flex justify-content-center">
               <img src="assets/img/Cacoon/mindfull-04.svg">
             </div>
@@ -438,11 +648,11 @@
 
         <div class="row d-flex justify-content-center" style="margin: 100px 0px;">
 
-          <h1 class="text-center text-white" style="color: whitesmoke;font-size: 3em;">What We Do </h1>
-          <p class="fs-lg-5 text-center" style="color: whitesmoke;font-size: 4em">
+          <h1 class="text-center text-white what">What We Do </h1>
+          <p class="fs-lg-5 text-center power-of-medi">
             The Power of Meditation
           </p>
-          <p id="text-lg" class="text-center" style="text-align: center; color: white;padding:0px 375px;font-size: 1em">
+          <p id="text-lg" class="text-center">
             Contrary to popular belief, meditation is not just about sitting still. It is a profound practice rooted
             in
             ancient
@@ -451,9 +661,9 @@
 
         </div>
 
-        <div class="row gap-2 d-flex justify-content-center">
+        <div class="row gap-lg-2 d-flex justify-content-center">
 
-          <div class="col-lg-3 content col-md-6 col-sm-6 item m-3 " data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-3  content col-md-6 col-sm-6 item item-card" data-aos="fade-up" data-aos-delay="100">
             <div class="card item-card card-block graditiont1">
               <div class="d-flex justify-content-center">
                 <img src="assets/img/Cacoon/stronge-mind.svg" style="padding: 20px;">
@@ -465,7 +675,7 @@
             </div>
           </div>
 
-          <div class="col-lg-3 content col-md-6 col-sm-6 item m-3" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-3  content col-md-6 col-sm-6 item item-card " data-aos="fade-up" data-aos-delay="100">
 
 
             <div class="card item-card card-block">
@@ -482,7 +692,7 @@
 
           </div>
 
-          <div class="col-lg-3 content col-md-6 col-sm-6 item m-3" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-3  content col-md-6 col-sm-6 item item-card " data-aos="fade-up" data-aos-delay="100">
             <div class="card item-card card-block graditiont1">
               <div class="d-flex justify-content-center">
                 <img src="assets/img/Cacoon/Healthy.svg" style=" padding: 20px;">
@@ -497,7 +707,7 @@
 
           </div>
 
-          <div class="col-lg-3 content col-md-6 col-sm-6 item m-3" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-3  content col-md-6 col-sm-6 item  item-card" data-aos="fade-up" data-aos-delay="100">
 
             <div class="card item-card card-block">
               <div class="d-flex justify-content-center">
@@ -513,7 +723,7 @@
 
           </div>
 
-          <div class="col-lg-3 content col-md-6 col-sm-6 item m-3" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-3  content col-md-6 col-sm-6 item  item-card" data-aos="fade-up" data-aos-delay="100">
 
             <div class="card item-card card-block graditiont1">
               <div class="d-flex justify-content-center">
@@ -528,7 +738,7 @@
 
           </div>
 
-          <div class="col-lg-3 content col-md-6 col-sm-6 item m-3" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-3  content col-md-6 col-sm-6 item item-card" data-aos="fade-up" data-aos-delay="100">
 
             <div class="card item-card card-block">
               <div class="d-flex justify-content-center">
@@ -551,18 +761,17 @@
         <div class="row gy-4">
           <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center " data-aos="zoom-out">
 
-            <p style="color: aliceblue;padding: 0px 100px;">We provide a unique learning experience through carefully
+            <p class="we-provide">We provide a unique learning experience through carefully
               crafted audio
               courses. Whether you seek peace,
               wisdom, or
               creativity, Cacoon is your sanctuary</p>
-            <div class="d-flex ">
+            <div class="d-flex  lern-more-btn">
 
-
-
-              <a class="btn-get-started ml-lg-4"
-                style="margin-left: 250px; background-color: whitesmoke;color:black; padding: 15px; border-radius: 10px;"
-                href=" #contact">Learn More </a>
+              <a class="btn-get-started ml-lg-4 btn-lern" href=" #contact" style="background-color: whitesmoke;
+        color: black;
+        padding: 15px;
+        border-radius: 10px;">Learn More </a>
               <!-- <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8"
                 class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch
                   Video</span></a> -->
@@ -590,7 +799,7 @@
 
       <div class="container py-2" id="Mindful-Beginnings">
         <div class="row d-flex justify-content-center align-items-center "> <!-- Card 1 -->
-          <div class="col-md-4 col-lg-3">
+          <div class="col-md-4 col-lg-3 card-course my-2 ">
             <div class="course-card bg-dark text-white">
               <img src="assets/img/Cacoon/e0e654f811.svg" alt="Mindful Beginnings">
               <div class="popular-label">Popular Course</div>
@@ -605,7 +814,7 @@
           </div>
 
           <!-- Card 2 -->
-          <div class="col-md-4 col-lg-3" id="Letting-go">
+          <div class="col-md-4 col-lg-3 my-2 card-course" id="Letting-go">
             <div class="course-card bg-dark text-white">
               <img src="assets/img/Cacoon/Mask group.svg" alt="Art of Letting Go">
               <div class="popular-label">Popular Course</div>
@@ -620,7 +829,7 @@
           </div>
 
           <!-- Card 3 -->
-          <div class="col-md-4 col-lg-3">
+          <div class="col-md-4 col-lg-3 card-course my-2" id="Mindful-Beginnings">
             <div class="course-card bg-dark text-white">
               <img src="assets/img/Cacoon/e0e654f811.svg" alt="Mindful Beginnings">
               <div class="popular-label">Popular Course</div>
@@ -640,15 +849,24 @@
     </section>
 
     <section class="hero-section">
-      <h1 class="text-white">Share Your Knowledge with the World</h1>
-      <h2 class="text-light">Become an Author</h2>
-      <p class="" style="color: #6200ea;margin: 0px 400px;">Have wisdom to share? Cacoon lets you create your own audio
-        courses and reach
-        thousands of listeners.</p>
-      <button class="btn btn-custom">Start Creating</button>
-      <div class="mt-4">
-        <img src="assets/img/Cacoon/study.svg" alt="Author illustration" style="height: 350px">
+      <div class="row">
+        <div class=" col-lg-12 col-md-6 col-ms-12">
+          <h1 class="text-white Share-Knowledge">Share Your Knowledge with the World</h1>
+          <h2 class="text-light">Become an Author</h2>
+          <p class="wisdom">Have wisdom to share? Cacoon lets you create your own audio
+            courses and reach
+            thousands of listeners.</p>
+          <button class="btn btn-custom">Start Creating</button>
+        </div>
+        <div class=" col-lg-12 col-md-6 col-ms-12">
+          <div class="mt-4">
+            <img src="assets/img/Cacoon/study.svg" alt="Author illustration" style="height: 350px">
+          </div>
+        </div>
+
       </div>
+
+
     </section>
 
     <!-- User Section -->
@@ -680,10 +898,10 @@
       <div class="container">
         <div class="row gy-3">
           <div class="col-12">
-            <p>Street 33, Natureville | +91 9283920299 | cacoonmediate@gmail.com</p>
+            <p class="text-white">Street 33, Natureville | +91 9283920299 | cacoonmediate@gmail.com</p>
           </div>
           <div class="col-12">
-            <p>All Copy Rights Reserved</p>
+            <p class="text-white">All Copy Rights Reserved</p>
           </div>
         </div>
       </div>
