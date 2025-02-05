@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Index - Cacoon websites </title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    @media (min-width: 768px) and (max-width: 1199px) {
+      #textlg {
+        padding: 0px 10px;
+      }
+    }
+
+
+    .hero-section {
+      text-align: center;
+      padding: 80px 20px;
+      background-color: #121212;
+    }
+
+    .hero-section h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    .hero-section p {
+      margin-top: 10px;
+      font-size: 1.2rem;
+    }
+
+    .btn-custom {
+      background-color: #6200ea;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1rem;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+
+    .user-section {
+      padding: 60px 20px;
+      background-color: #000;
+    }
+
+    .user-section h2 {
+      color: #cbb8f7;
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2.5rem;
+    }
+
+    .user-card {
+      background: #1c1c1c;
+      padding: 20px;
+      border-radius: 10px;
+      color: white;
+    }
+
+    .footer {
+      background-color: #121212;
+      padding: 40px;
+      text-align: center;
+    }
+
+    .footer a {
+      text-decoration: none;
+      color: white;
+    }
+
+    .course-card {
+      position: relative;
+      color: white;
+      border-radius: 12px;
+      overflow: hidden;
+      transition: transform 0.2s;
+    }
+
+    .course-card img {
+      width: 100%;
+      height: auto;
+    }
+
+    .course-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .course-content {
+      position: absolute;
+      bottom: 15px;
+      left: 15px;
+      right: 15px;
+      z-index: 10;
+    }
+
+    .popular-label {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      background: rgba(255, 255, 255, 0.8);
+      color: black;
+      padding: 5px 10px;
+      font-size: 0.8rem;
+      border-radius: 12px;
+      font-weight: bold;
+    }
+
+    .btn-custom {
+      background: white;
+      color: black;
+      font-weight: bold;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 20px;
+    }
+
+    .btn-custom:hover {
+      background: #f8f9fa;
+    }
+
+    .course-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: white;
+    }
+
+    .course-description {
+      font-size: 0.9rem;
+      opacity: 0.85;
+    }
+
+    .col-xl-3 {
+      margin: 10px;
+      width: 20%;
+    }
+
+    img {
+      height: 150px;
+      width: 100%;
+    }
+
+    .item {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+
+    .item-card {
+      transition: 0.5s;
+      cursor: pointer;
+    }
+
+    .item-card-title {
+      font-size: 18px;
+      transition: 1s;
+      cursor: pointer;
+    }
+
+    .item-card-title:hover {
+      color: black;
+    }
+
+    .item-card-title i {
+      font-size: 15px;
+      transition: 1s;
+      cursor: pointer;
+      color: #ffa710
+    }
+
+    .card-title i:hover {
+      transform: scale(1.25) rotate(100deg);
+      color: #18d4ca;
+
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .card-text {
+      height: 110px;
+    }
+
+    .card::before,
+    .card::after {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      transform: scale3d(0, 0, 1);
+      transition: transform .3s ease-out 0s;
+      background: rgba(255, 255, 255, 0.1);
+      content: '';
+      pointer-events: none;
+    }
+
+    .card::before {
+      transform-origin: left top;
+    }
+
+    .card::after {
+      transform-origin: right bottom;
+    }
+
+    .exp-top {
+      margin: 0px 10px 10px 10px;
+    }
+
+    .btm {
+      margin-bottom: 40px;
+    }
+
+
+
+    .card:hover::before,
+    .card:hover::after,
+    .card:focus::before,
+    .card:focus::after {
+      transform: scale3d(1, 1, 1);
+    }
+
+    .graditiont1 {
+      background: hsla(255, 73%, 67%, 1);
+
+      background: linear-gradient(270deg, hsla(255, 73%, 67%, 1) 19%, hsla(185, 90%, 51%, 1) 100%);
+
+      background: -moz-linear-gradient(270deg, hsla(255, 73%, 67%, 1) 19%, hsla(185, 90%, 51%, 1) 100%);
+
+      background: -webkit-linear-gradient(270deg, hsla(255, 73%, 67%, 1) 19%, hsla(185, 90%, 51%, 1) 100%);
+
+      filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#8e6fe9", endColorstr="#12dff3", GradientType=1);
+    }
+  </style>
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top" style="background-color: #804FB3;">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">Cacoon</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#What-We-Do">About</a></li>
+          <!-- <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#pricing">Pricing</a></li> -->
+          <li class="dropdown"><a href="#"><span>Our Courses</span> <i
+                class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#Mindful-Beginnings">Mindful BeginningsPopular </a></li>
+              <li><a href="#Letting-go">The Art of Letting Go</a></li>
+              <li><a href="#">Mindful BeginningsPopular </a></li>
+            </ul>
+          </li>
+          <li><a href="#Take-Your-Pick">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <!-- <a class="btn-getstarted" href="#about">Get Started</a> -->
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background" style="background-color: #804FB3;">
+
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center " data-aos="zoom-out">
+            <h1 style="font-size: 5em; line-height: 72px;">Find Your
+              Inner Peace
+              with Cacoon</h1>
+            <p>Explore audio courses in Meditation, Podcasts,
+              Indian Mythology, and Spiritual Music to relax
+              and grow</p>
+            <div class="d-flex">
+              <a href="#about" class="btn-get-started mr-5" style="background-color: whitesmoke;color: black;">Lean More
+              </a>
+              <a class="btn-get-started ml-lg-4" style="margin-left: 20px; background-color: whitesmoke;color:black;"
+                href=" #contact">Contact Us </a>
+              <!-- <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8"
+                class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch
+                  Video</span></a> -->
+            </div>
+          </div>
+          <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="200">
+            <img src="assets/img/Cacoon/Meditation-01.svg" class="img-fluid animated" alt="">
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- Clients Section -->
+    <!-- <section id="clients" class="clients section light-background">
+
+       <div class="container" data-aos="zoom-in">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 2,
+                  "spaceBetween": 40
+                },
+                "480": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 60
+                },
+                "640": {
+                  "slidesPerView": 4,
+                  "spaceBetween": 80
+                },
+                "992": {
+                  "slidesPerView": 5,
+                  "spaceBetween": 120
+                },
+                "1200": {
+                  "slidesPerView": 6,
+                  "spaceBetween": 120
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
+          </div>
+        </div>
+
+      </div> -->
+
+    <!-- </section> -->
+
+    <!-- About Section -->
+    <section id="about" class="about section" style="background-color: black;">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2 style="color: whitesmoke;font-size: 3em;">KEY FEATURES</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row d-flex justify-content-center">
+
+          <div class="col-lg-3 content" data-aos="fade-up" data-aos-delay="100">
+            <div class="d-flex justify-content-center">
+              <img src="assets/img/Cacoon/HeadPhones-02.svg">
+            </div>
+            <p class="text-center mt-3" style="color: aliceblue;">
+              100% Audio-Based – No distractions, just immersive sound.
+            </p>
+
+          </div>
+
+          <div class="col-lg-3 content" data-aos="fade-up" data-aos-delay="100">
+            <div class="d-flex justify-content-center">
+              <img src="assets/img/Cacoon/Search-03.svg">
+            </div>
+            <p class="text-center mt-3" style="color: aliceblue;">
+              Learn & Explore – Discover ancient wisdom and spiritual growth.
+            </p>
+
+          </div>
+          <div class="col-lg-3 content" data-aos="fade-up" data-aos-delay="100">
+            <div class="d-flex justify-content-center">
+              <img src="assets/img/Cacoon/mindfull-04.svg">
+            </div>
+            <p class="text-center mt-3" style="color: aliceblue;">
+              Mindfulness & Stress Relief – Courses designed to help you unwind. </p>
+
+          </div>
+        </div>
+
+      </div>
+      <div class="container" id="What-We-Do">
+
+        <div class="row d-flex justify-content-center" style="margin: 100px 0px;">
+
+          <h1 class="text-center text-white" style="color: whitesmoke;font-size: 3em;">What We Do </h1>
+          <p class="fs-lg-5 text-center" style="color: whitesmoke;font-size: 4em">
+            The Power of Meditation
+          </p>
+          <p id="text-lg" class="text-center" style="text-align: center; color: white;padding:0px 375px;font-size: 1em">
+            Contrary to popular belief, meditation is not just about sitting still. It is a profound practice rooted
+            in
+            ancient
+            wisdom that helps cultivate mindfulness, reduce stress, and enhance overall well-being.
+          </p>
+
+        </div>
+
+        <div class="row gap-2 d-flex justify-content-center">
+
+          <div class="col-lg-3 content col-md-6 col-sm-6 item m-3 " data-aos="fade-up" data-aos-delay="100">
+            <div class="card item-card card-block graditiont1">
+              <div class="d-flex justify-content-center">
+                <img src="assets/img/Cacoon/stronge-mind.svg" style="padding: 20px;">
+              </div>
+              <h5 class="item-card-title mt-3 mb-3 text-center">Stronger Mind & Body</h5>
+              <p class="card-text text-center exp-top btm">Meditation improves focus, strengthens mental resilience, and
+                promotes
+                inner harmony.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 content col-md-6 col-sm-6 item m-3" data-aos="fade-up" data-aos-delay="100">
+
+
+            <div class="card item-card card-block">
+              <div class="d-flex justify-content-center">
+                <img src="assets/img/Cacoon/flexibility.svg" style="padding: 20px;">
+              </div>
+              <h5 class="item-card-title mt-3 mb-3 text-center">Increased Flexibility</h5>
+              <p class="card-text text-center exp-top btm">By reducing stress and tension, meditation allows the mind
+                and
+                body to
+                remain agile and adaptable.</p>
+            </div>
+
+
+          </div>
+
+          <div class="col-lg-3 content col-md-6 col-sm-6 item m-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="card item-card card-block graditiont1">
+              <div class="d-flex justify-content-center">
+                <img src="assets/img/Cacoon/Healthy.svg" style=" padding: 20px;">
+              </div>
+              <h5 class="item-card-title mt-3 mb-3 text-center">Healthy Lifestyle</h5>
+              <p class="card-text text-center exp-top btm">A daily meditation practice fosters healthier habits, better
+                sleep,
+                and
+                emotional balance.</p>
+            </div>
+
+
+          </div>
+
+          <div class="col-lg-3 content col-md-6 col-sm-6 item m-3" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="card item-card card-block">
+              <div class="d-flex justify-content-center">
+                <img src="assets/img/Cacoon/bloofflow.svg" style="padding: 20px;">
+              </div>
+              <h5 class="item-card-title mt-3 mb-3 text-center">Increases Blood Flow</h5>
+              <p class="card-text text-center exp-top btm">Deep breathing and mindfulness techniques enhance
+                circulation,
+                delivering
+                oxygen more efficiently to the body.</p>
+            </div>
+
+
+          </div>
+
+          <div class="col-lg-3 content col-md-6 col-sm-6 item m-3" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="card item-card card-block graditiont1">
+              <div class="d-flex justify-content-center">
+                <img src="assets/img/Cacoon/taraju.svg" style="padding: 20px;">
+              </div>
+              <h5 class="item-card-title mt-3 mb-3 text-center">Balances Stress Hormones</h5>
+              <p class="card-text text-center exp-top btm">By regulating the adrenal glands, meditation helps control
+                cortisol
+                levels, reducing anxiety and promoting calmness.</p>
+            </div>
+
+
+          </div>
+
+          <div class="col-lg-3 content col-md-6 col-sm-6 item m-3" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="card item-card card-block">
+              <div class="d-flex justify-content-center">
+                <img src="assets/img/Cacoon/blood-pressuer.svg" style="padding: 20px;">
+              </div>
+              <h5 class="item-card-title mt-3 mb-3 text-center">Lowers Blood Pressure</h5>
+              <p class="card-text text-center exp-top btm">By regulating the adrenal glands, meditation helps control
+                cortisol
+                levels, reducing anxiety and promoting calmness.</p>
+            </div>
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="container my-5">
+        <div class="row gy-4">
+          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center " data-aos="zoom-out">
+
+            <p style="color: aliceblue;padding: 0px 100px;">We provide a unique learning experience through carefully
+              crafted audio
+              courses. Whether you seek peace,
+              wisdom, or
+              creativity, Cacoon is your sanctuary</p>
+            <div class="d-flex ">
+
+
+
+              <a class="btn-get-started ml-lg-4"
+                style="margin-left: 250px; background-color: whitesmoke;color:black; padding: 15px; border-radius: 10px;"
+                href=" #contact">Learn More </a>
+              <!-- <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8"
+                class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch
+                  Video</span></a> -->
+            </div>
+          </div>
+          <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="200">
+            <img src="assets/img/Cacoon/learn-more.svg" class="img-fluid animated" alt="">
+          </div>
+
+        </div>
+      </div>
+    </section><!-- /About Section -->
+
+    <!-- Why Us Section -->
+    <section id="Take-Your-Pick" class="section why-us light-background" data-builder="section"
+      style="background-color: #804FB3;">
+      <div class="container section-title" data-aos="fade-up">
+
+        <h1 class="text-center text-white" style="color: black;font-size: 2em;">Take Your Pick</h1>
+        <p class="fs-lg-5 text-center text-white" style="color: black;font-size: 3em">
+          Our Courses
+        </p>
+        <p class="text-white">Explore topics from meditation to mythology.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container py-2" id="Mindful-Beginnings">
+        <div class="row d-flex justify-content-center align-items-center "> <!-- Card 1 -->
+          <div class="col-md-4 col-lg-3">
+            <div class="course-card bg-dark text-white">
+              <img src="assets/img/Cacoon/e0e654f811.svg" alt="Mindful Beginnings">
+              <div class="popular-label">Popular Course</div>
+              <div class="course-content">
+                <h5 class="course-title">Mindful Beginnings</h5>
+                <p class="course-description">
+                  Learn the basics of mindfulness and start your journey toward inner peace.
+                </p>
+                <button class="btn btn-custom mt-2">Start Now</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-md-4 col-lg-3" id="Letting-go">
+            <div class="course-card bg-dark text-white">
+              <img src="assets/img/Cacoon/Mask group.svg" alt="Art of Letting Go">
+              <div class="popular-label">Popular Course</div>
+              <div class="course-content">
+                <h5 class="course-title">The Art of Letting Go</h5>
+                <p class="course-description">
+                  Release negativity and create space for positivity and growth.
+                </p>
+                <button class="btn btn-custom mt-2">Start Now</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-md-4 col-lg-3">
+            <div class="course-card bg-dark text-white">
+              <img src="assets/img/Cacoon/e0e654f811.svg" alt="Mindful Beginnings">
+              <div class="popular-label">Popular Course</div>
+              <div class="course-content">
+                <h5 class="course-title">Mindful Beginnings</h5>
+                <p class="course-description">
+                  Learn the basics of mindfulness and start your journey toward inner peace.
+                </p>
+                <button class="btn btn-custom mt-2">Start Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+
+    <section class="hero-section">
+      <h1 class="text-white">Share Your Knowledge with the World</h1>
+      <h2 class="text-light">Become an Author</h2>
+      <p class="" style="color: #6200ea;margin: 0px 400px;">Have wisdom to share? Cacoon lets you create your own audio
+        courses and reach
+        thousands of listeners.</p>
+      <button class="btn btn-custom">Start Creating</button>
+      <div class="mt-4">
+        <img src="assets/img/Cacoon/study.svg" alt="Author illustration" style="height: 350px">
+      </div>
+    </section>
+
+    <!-- User Section -->
+    <section class="user-section">
+      <h2 style="">What Our Users Say</h2>
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-md-6">
+            <div class="user-card text-center">
+              <p>"Cacoon has transformed my meditation practice! The guided sessions are
+                soothing and effective." –
+                Ananya
+                R.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="user-card text-center">
+              <p>"I love listening to Indian mythology stories while commuting. It's engaging and insightful." – Rohit
+                M.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row gy-3">
+          <div class="col-12">
+            <p>Street 33, Natureville | +91 9283920299 | cacoonmediate@gmail.com</p>
+          </div>
+          <div class="col-12">
+            <p>All Copy Rights Reserved</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+  </main>
+
+
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
