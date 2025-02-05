@@ -32,6 +32,12 @@
   <style>
     /* Extra small devices (phones, 320px and up) */
     @media only screen and (min-width: 375px) and (max-width: 667px) {
+      .user-section h2 {
+        color: #cbb8f7;
+        text-align: center;
+        margin-bottom: 40px;
+        font-size: 2rem;
+      }
 
       /* Your styles for small phones */
 
@@ -97,6 +103,13 @@
         /* margin: 0px 400px; */
       }
 
+      .user-section h2 {
+        color: #cbb8f7;
+        text-align: center;
+        margin-bottom: 40px;
+        font-size: 2.5rem;
+      }
+
       /* .item-card {
         margin: 5px 12px;
       } */
@@ -135,12 +148,43 @@
         justify-content: center;
       }
 
+      .hero .btn-get-started,
+      .hero .btn-watch-video {
 
+        font-size: 13px;
+      }
+
+
+
+
+    }
+
+    @media (max-width: 640px) {
+
+      .hero .btn-get-started,
+      .hero .btn-watch-video {
+        font-size: 13px;
+        width: 136px;
+      }
     }
 
     @media only screen and (min-width: 481px) and (max-width: 767px) {
       .lern-more-btn {
         justify-content: center;
+      }
+
+      #btn-get-started {
+        width: 136px;
+        font-size: 13px;
+        color: var(--contrast-color);
+        background: var(--accent-color);
+        font-family: var(--heading-font);
+        font-weight: 500;
+        letter-spacing: 1px;
+        display: inline-block;
+        padding: 5px 20px 5px 20px;
+        border-radius: 50px;
+        transition: 0.5s;
       }
 
       .item-card {
@@ -529,16 +573,17 @@
               Indian Mythology, and Spiritual Music to relax
               and grow</p>
             <div class=" d-flex">
-              <a href="#about" class="btn-get-started mr-5" style="background-color: whitesmoke;color: black;">Learn
-                More
-              </a>
+              <p><a href="#about" id="btn-get-started" class="btn-get-started mr-5"
+                  style="background-color: whitesmoke;color: black;">Learn
+                  More
+                </a></p>
 
-              <a href="#" class="d-inline-block me-2" style="margin-left: 20px;">
+              <a href="https://www.apple.com/in/store" class="d-inline-block me-2" style="margin-left: 20px;">
                 <img
                   src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_200,h_65/icon-AppStore_lg30tv"
                   alt="Apple Store" style="height:48px; ">
               </a>
-              <a href="#" class="d-inline-block" style="margin-left: 20px;">
+              <a href="https://play.google.com" class="d-inline-block" style="margin-left: 20px;">
                 <img
                   src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_200,h_65/icon-GooglePlay_1_zixjxl"
                   alt="Google Play" style="height:48px;">
@@ -929,22 +974,23 @@
             </a>
           </div>
           <div class="col-md-12 mb-3 text-center">
-            <a href="#" class="d-inline-block me-2">
+            <a href="https://www.apple.com/in/store" class="d-inline-block me-2" style="margin-left: 20px;">
               <img
                 src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_200,h_65/icon-AppStore_lg30tv"
                 alt="Apple Store" style="height:48px; ">
             </a>
-            <a href="#" class="d-inline-block">
+            <a href="https://play.google.com" class="d-inline-block" style="margin-left: 20px;">
               <img
                 src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_200,h_65/icon-GooglePlay_1_zixjxl"
                 alt="Google Play" style="height:48px;">
             </a>
           </div>
+          <hr class="text-light">
 
-          <div class="col-md-4 mb-3 text-center mx-auto">
+          <div class="col-md-12 mb-3 text-center mx-auto ">
             <ul class="list-inline">
               <li class="list-inline-item"><a href="#" class="text-light text-decoration-none">Privacy Policy</a></li>
-              <li class="list-inline-item"><a href="#" class="text-light text-decoration-none">Refined Policy</a></li>
+              <li class="list-inline-item"><a href="#" class="text-light text-decoration-none">Refund Policy</a></li>
               <li class="list-inline-item"><a href="#" class="text-light text-decoration-none">Terms and Conditions</a>
               </li>
             </ul>
