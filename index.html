@@ -252,7 +252,7 @@
         text-align: center;
         color: white;
         padding: 0px 50px;
-        font-size: 1em"
+        font-size: 3em"
 
       }
 
@@ -276,11 +276,11 @@
 
       .we-provide {
         color: aliceblue;
-        padding: 0px 92px;
+        padding: 44px 60px;
       }
 
       .wisdom {
-        color: #6200ea;
+        color: #af99ef;
         margin: 0px 400px;
 
       }
@@ -431,15 +431,13 @@
       padding-right: 5px;
     }
 
-    .item-card {
-      transition: 0.5s;
-      cursor: pointer;
-    }
+
 
     .item-card-title {
       font-size: 18px;
       transition: 1s;
       cursor: pointer;
+      color: black;
     }
 
     .item-card-title:hover {
@@ -500,6 +498,7 @@
 
 
 
+
     .card:hover::before,
     .card:hover::after,
     .card:focus::before,
@@ -507,16 +506,71 @@
       transform: scale3d(1, 1, 1);
     }
 
+    .graditiont1:nth-child(odd) {
+      color: white;
+    }
+
+    .item-graditiont1:nth-child(even) {
+      color: black;
+    }
+
+
     .graditiont1 {
-      background: hsla(255, 73%, 67%, 1);
+      background: rgb(142, 111, 233);
+      background: linear-gradient(90deg, rgba(142, 111, 233, 1) 0%, rgba(72, 59, 112, 1) 90%, rgba(72, 59, 112, 1) 95%, rgba(72, 59, 112, 1) 97%);
+    }
 
-      background: linear-gradient(270deg, hsla(255, 73%, 67%, 1) 19%, hsla(185, 90%, 51%, 1) 100%);
+    .item-card {
+      transition: 0.5s;
+      cursor: pointer;
+      margin-top: 20px;
+      margin: 10px;
+      /* margin: 20px; */
+    }
 
-      background: -moz-linear-gradient(270deg, hsla(255, 73%, 67%, 1) 19%, hsla(185, 90%, 51%, 1) 100%);
+    h1 {
+      color: white;
+    }
 
-      background: -webkit-linear-gradient(270deg, hsla(255, 73%, 67%, 1) 19%, hsla(185, 90%, 51%, 1) 100%);
+    @media (min-width: 778px) and (max-width: 1024px) {
+      .power-of-medi {
+        font-weight: bold;
+        font-size: 31px;
+        font-family: sans-serif;
+        /* Avoid "none" */
+        text-transform: uppercase;
+      }
 
-      filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#8e6fe9", endColorstr="#12dff3", GradientType=1);
+      /* Large screens (lg) */
+      .item-card {
+        padding: 15px;
+      }
+    }
+
+    @media (min-width: 1023px) and (max-width: 1366px) {
+      .power-of-medi {
+        font-weight: bold;
+        font-size: 28px;
+        font-family: sans-serif;
+        /* Avoid "none" */
+        text-transform: uppercase;
+      }
+
+      /* Large screens (lg) */
+      .item-card {
+        padding: 15px;
+      }
+    }
+
+    @media (min-width: 1366px) {
+
+      .power-of-medi {
+        font-family: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 56px;
+        text-transform: uppercase;
+      }
     }
   </style>
 </head>
@@ -594,7 +648,7 @@
             </div>
           </div>
           <div class="col-lg-6 order-1 order-lg-2 hero-img medi-img-flex" data-aos="zoom-out" data-aos-delay="200">
-            <img src="assets/img/Cocoon/Meditation-01.svg" class="img-fluid animated" id="medi-img" alt="">
+            <img src="assets/img/Cocoon/Meditation-02.svg" class="img-fluid animated" id="medi-img" alt="">
           </div>
 
         </div>
@@ -675,7 +729,7 @@
 
         <div class="row d-flex justify-content-center">
 
-          <div class="col-lg-3 col-md-4 content" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-4 col-md-4 content" data-aos="fade-up" data-aos-delay="100">
             <div class="d-flex justify-content-center">
               <img src="assets/img/Cocoon/HeadPhones-02.svg">
             </div>
@@ -685,7 +739,7 @@
 
           </div>
 
-          <div class="col-lg-3 col-md-4 content" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-4 col-md-4 content" data-aos="fade-up" data-aos-delay="100">
             <div class="d-flex justify-content-center">
               <img src="assets/img/Cocoon/Search-03.svg">
             </div>
@@ -694,7 +748,7 @@
             </p>
 
           </div>
-          <div class="col-lg-3 col-md-4 content" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-4 col-md-4 content" data-aos="fade-up" data-aos-delay="100">
             <div class="d-flex justify-content-center">
               <img src="assets/img/Cocoon/mindfull-04.svg">
             </div>
@@ -707,114 +761,91 @@
       </div>
       <div class="container" id="What-We-Do">
 
-        <div class="row d-flex justify-content-center" style="margin: 100px 0px;">
+        <div class="row d-flex justify-content-center " style="margin: 100px 10%;">
 
           <h1 class="text-center text-white what">What We Do </h1>
-          <p class="fs-lg-5 text-center power-of-medi">
-            The Power of Meditation
-          </p>
-          <p id="text-lg" class="text-center">
-            Contrary to popular belief, meditation is not just about sitting still. It is a profound practice rooted
-            in
-            ancient
-            wisdom that helps cultivate mindfulness, reduce stress, and enhance overall well-being.
-          </p>
+          <h1 class="fs-lg-5 text-center power-of-medi">
+            The Power to heal yourselves through energy
+          </h1>
+          <h2 id=" text-primary" style="" class="text-center">
+            based on Indian ancient wisdom
+          </h2>
 
         </div>
 
-        <div class="row gap-lg-2 d-flex justify-content-center">
-
-          <div class="col-lg-3  content col-md-6 col-sm-6 item item-card" data-aos="fade-up" data-aos-delay="100">
-            <div class="card item-card card-block graditiont1">
-              <div class="d-flex justify-content-center">
-                <img src="assets/img/Cocoon/stronge-mind.svg" style="padding: 20px;">
+        <div class="conatiner">
+          <div class="row">
+            <div class="col-lg-4 col-md-6">
+              <div class="card item-card card-block graditiont1">
+                <div class="d-flex justify-content-center">
+                  <img src="assets/img/Cocoon/stronge-mind.svg" style="padding: 20px;">
+                </div>
+                <h5 class="item-card-title mt-3 mb-3 text-center">Stronger Mind & Body</h5>
+                <p class="card-text text-center exp-top btm">Meditation improves focus, strengthens mental resilience,
+                  and
+                  promotes inner harmony.</p>
               </div>
-              <h5 class="item-card-title mt-3 mb-3 text-center">Stronger Mind & Body</h5>
-              <p class="card-text text-center exp-top btm">Meditation improves focus, strengthens mental resilience, and
-                promotes
-                inner harmony.</p>
             </div>
-          </div>
-
-          <div class="col-lg-3  content col-md-6 col-sm-6 item item-card " data-aos="fade-up" data-aos-delay="100">
-
-
-            <div class="card item-card card-block">
-              <div class="d-flex justify-content-center">
-                <img src="assets/img/Cocoon/flexibility.svg" style="padding: 20px;">
+            <div class="col-lg-4 col-md-6">
+              <div class="card item-card card-block">
+                <div class="d-flex justify-content-center">
+                  <img src="assets/img/Cocoon/flexibility.svg" style="padding: 20px;">
+                </div>
+                <h5 class="item-card-title mt-3 mb-3 text-center">Increased Flexibility</h5>
+                <p class="card-text text-center exp-top btm">By reducing stress and tension, meditation allows the mind
+                  and body
+                  to remain agile and adaptable.</p>
               </div>
-              <h5 class="item-card-title mt-3 mb-3 text-center">Increased Flexibility</h5>
-              <p class="card-text text-center exp-top btm">By reducing stress and tension, meditation allows the mind
-                and
-                body to
-                remain agile and adaptable.</p>
             </div>
-
-
-          </div>
-
-          <div class="col-lg-3  content col-md-6 col-sm-6 item item-card " data-aos="fade-up" data-aos-delay="100">
-            <div class="card item-card card-block graditiont1">
-              <div class="d-flex justify-content-center">
-                <img src="assets/img/Cocoon/Healthy.svg" style=" padding: 20px;">
+            <div class="col-lg-4 col-md-6">
+              <div class="card item-card card-block graditiont1">
+                <div class="d-flex justify-content-center">
+                  <img src="assets/img/Cocoon/Healthy.svg" style="padding: 20px;">
+                </div>
+                <h5 class="item-card-title mt-3 mb-3 text-center">Healthy Lifestyle</h5>
+                <p class="card-text text-center exp-top btm">A daily meditation practice fosters healthier habits,
+                  better sleep,
+                  and emotional balance.</p>
               </div>
-              <h5 class="item-card-title mt-3 mb-3 text-center">Healthy Lifestyle</h5>
-              <p class="card-text text-center exp-top btm">A daily meditation practice fosters healthier habits, better
-                sleep,
-                and
-                emotional balance.</p>
             </div>
-
-
-          </div>
-
-          <div class="col-lg-3  content col-md-6 col-sm-6 item  item-card" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="card item-card card-block">
-              <div class="d-flex justify-content-center">
-                <img src="assets/img/Cocoon/bloofflow.svg" style="padding: 20px;">
+            <div class="col-lg-4 col-md-6">
+              <div class="card item-card card-block">
+                <div class="d-flex justify-content-center">
+                  <img src="assets/img/Cocoon/bloofflow.svg" style="padding: 20px;">
+                </div>
+                <h5 class="item-card-title mt-3 mb-3 text-center">Increases Blood Flow</h5>
+                <p class="card-text text-center exp-top btm">Deep breathing and mindfulness techniques enhance
+                  circulation,
+                  delivering oxygen more efficiently to the body.</p>
               </div>
-              <h5 class="item-card-title mt-3 mb-3 text-center">Increases Blood Flow</h5>
-              <p class="card-text text-center exp-top btm">Deep breathing and mindfulness techniques enhance
-                circulation,
-                delivering
-                oxygen more efficiently to the body.</p>
             </div>
-
-
-          </div>
-
-          <div class="col-lg-3  content col-md-6 col-sm-6 item  item-card" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="card item-card card-block graditiont1">
-              <div class="d-flex justify-content-center">
-                <img src="assets/img/Cocoon/taraju.svg" style="padding: 20px;">
+            <div class="col-lg-4 col-md-6">
+              <div class="card item-card card-block graditiont1">
+                <div class="d-flex justify-content-center">
+                  <img src="assets/img/Cocoon/taraju.svg" style="padding: 20px;">
+                </div>
+                <h5 class="item-card-title mt-3 mb-3 text-center">Balances Stress Hormones</h5>
+                <p class="card-text text-center exp-top btm">By regulating the adrenal glands, meditation helps control
+                  cortisol
+                  levels, reducing anxiety and promoting calmness.</p>
               </div>
-              <h5 class="item-card-title mt-3 mb-3 text-center">Balances Stress Hormones</h5>
-              <p class="card-text text-center exp-top btm">By regulating the adrenal glands, meditation helps control
-                cortisol
-                levels, reducing anxiety and promoting calmness.</p>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="card item-card card-block">
+                <div class="d-flex justify-content-center">
+                  <img src="assets/img/Cocoon/blood-pressuer.svg" style="padding: 20px;">
+                </div>
+                <h5 class="item-card-title mt-3 mb-3 text-center">Lowers Blood Pressure</h5>
+                <p class="card-text text-center exp-top btm">By regulating the adrenal glands, meditation helps control
+                  cortisol
+                  levels, reducing anxiety and promoting calmness.</p>
+              </div>
             </div>
 
-
           </div>
-
-          <div class="col-lg-3  content col-md-6 col-sm-6 item item-card" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="card item-card card-block">
-              <div class="d-flex justify-content-center">
-                <img src="assets/img/Cocoon/blood-pressuer.svg" style="padding: 20px;">
-              </div>
-              <h5 class="item-card-title mt-3 mb-3 text-center">Lowers Blood Pressure</h5>
-              <p class="card-text text-center exp-top btm">By regulating the adrenal glands, meditation helps control
-                cortisol
-                levels, reducing anxiety and promoting calmness.</p>
-            </div>
-
-
-          </div>
-
         </div>
+
+
 
       </div>
 
@@ -839,7 +870,7 @@
             </div>
           </div>
           <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="200">
-            <img src="assets/img/Cocoon/learn-more.svg" class="img-fluid animated" alt="">
+            <img src="assets/img/Cocoon/Learn-more01.svg" class="img-fluid animated" alt="">
           </div>
 
         </div>
@@ -920,8 +951,9 @@
           <a href="#footer" class="btn btn-custom">Start Creating</a>
         </div>
         <div class=" col-lg-12 col-md-6 col-ms-12">
-          <div class="mt-4">
-            <img src="assets/img/Cocoon/study.svg" alt="Author illustration" style="height: 350px">
+          <div class="mt-4" style=" padding: 20px; display: flex; justify-content: center;">
+            <img src="assets/img/Cocoon/study01.svg" alt="Author illustration"
+              style="height: 350px; filter: drop-shadow(0px 0px 100px rgba(56, 104, 255, 1)); background-color: transparent;">
           </div>
         </div>
 
